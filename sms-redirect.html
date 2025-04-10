@@ -2,33 +2,4 @@
   const baseUrl = "https://www.easterloanfast.com/?c=298253&v1=sms&v2=";
   const uniqueId = 'sms_' + Date.now();
   window.location.href = baseUrl + uniqueId;
-</script><!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Redirecting...</title>
-  <script>
-    // CONFIG
-    const trafficSource = "sms"; // Change to email, facebook, etc. as needed
-    const campaignId = "298253"; // Your LeadsMarket campaign ID
-    const baseUrl = "https://www.easterloanfast.com/";
-
-    // Generate a unique click ID using timestamp + random string
-    function generateClickID() {
-      const timestamp = Date.now();
-      const random = Math.floor(Math.random() * 100000);
-      return `${trafficSource}_${timestamp}_${random}`;
-    }
-
-    // Redirect to the offer URL with tracking params
-    window.onload = function () {
-      const clickID = generateClickID();
-      const finalUrl = `${baseUrl}?c=${campaignId}&v1=${trafficSource}&v2=${clickID}`;
-      window.location.href = finalUrl;
-    };
-  </script>
-</head>
-<body>
-  <p>Redirecting you to the offer...</p>
-</body>
-</html>
+</script>
